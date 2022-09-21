@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Agenda_telefonica
 {
-    public partial class Form1 : Form
+    public partial class frmInserir_editar : Form
     {
-        public Form1()
+        public frmInserir_editar()
         {
             InitializeComponent();
+        }
+
+        private void cmd_fechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
