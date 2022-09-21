@@ -18,6 +18,9 @@ namespace Agenda_telefonica
 
             //apresenta versão do software
             label2.Text = Cl_Geral.versao;
+
+            //carrega os contatos
+            Cl_Geral.Constroe_lista_contatos();
         }
 
         private void cmd_sair_Click(object sender, EventArgs e)
