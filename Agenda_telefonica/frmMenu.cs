@@ -35,5 +35,10 @@ namespace Agenda_telefonica
             frmInserir_editar formulario = new frmInserir_editar();
             formulario.ShowDialog();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

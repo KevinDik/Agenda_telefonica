@@ -19,7 +19,7 @@ namespace Agenda_telefonica
         {
             //metodo que carrega a lista de contatos
             string pasta_documentos = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            string ficheiro = pasta_documentos + @"\ficheiro_contatos.txt";
+            string ficheiro = pasta_documentos + @"\telefonica.txt";
 
             //cria lista vazia
             Lista_contatos = new List<Cl_Contato>();
@@ -46,6 +46,29 @@ namespace Agenda_telefonica
 
                 file.Dispose();
             }
+        }
+
+        public static void Gravar_novo_registro(string nome, string contato)
+        {
+            //gravar um novo registro na lista e ficheiro
+
+            Lista_contatos.Add(new Cl_Contato() { nome = nome, contato = contato });
+            Gravar_ficheiro();
+            
+        }
+
+        public static void Gravar_ficheiro()
+        {
+            string pasta_documentos = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string telefonica = pasta_documentos + @"\telefonica.txt";
+
+            StreamWriter ficheiro = new StreamWriter(telefonica, false, Encoding.Default);
+            foreach (Cl_Contato item in Lista_contatos)
+            {
+                ficheiro.WriteLine(item.nome);
+                ficheiro.WriteLine(item.contato);
+            }
+            ficheiro.Dispose();
         }
     }
 }
