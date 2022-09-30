@@ -40,5 +40,19 @@ namespace Agenda_telefonica
         {
 
         }
+
+        private void cmd_pesquisar_Click(object sender, EventArgs e)
+        {
+            //abrir o quadro de pesquisa
+            frm_Texto f = new frm_Texto();
+            f.ShowDialog();
+
+            //quando fechar o quadro verifica se foi cancelado
+            if (f.cancelado == true) return;
+
+            //abre o quadro
+            frm_resultados ff = new frm_resultados(f.texto);
+            ff.ShowDialog();
+        }
     }
 }

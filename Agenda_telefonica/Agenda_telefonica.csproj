@@ -60,6 +60,18 @@
     <Compile Include="frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_resultados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_resultados.Designer.cs">
+      <DependentUpon>frm_resultados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Texto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Texto.Designer.cs">
+      <DependentUpon>frm_Texto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmInserir_editar.resx">
@@ -67,6 +79,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_resultados.resx">
+      <DependentUpon>frm_resultados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Texto.resx">
+      <DependentUpon>frm_Texto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
